@@ -1,11 +1,24 @@
+import { NavLink } from "react-router-dom";
 import CartWidget from "../CartWidget/CartWidget";
 import './navbar.css';
+import { useRef } from "react";
 
 const NavBar = () => {
+
+  const linkProds = ['Pianos', 'Guitarras', 'Bajos', 'Baterías', 'Micrófonos', 'Saxofónes', 'Consolas'];
+
+  const navBarRef = useRef();
+  const navBarTogglerRef = useRef();
+
+  const hideNavBar = () => {
+    navBarRef.current.classList.remove('show');
+    navBarTogglerRef.current.classList.add('collapsed');
+  }
+
   return (
     <nav className="navbar navbar-expand-lg bg-body-tertiary">
       <div className="container-fluid d-flex flex-lg-row-reverse">
-        <button className="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        <button ref={navBarTogglerRef} className="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
           aria-expanded="false" aria-controls="navbarNav" aria-label="Toggle navigation">
           <span className="toggler-icon top-bar"></span>
           <span className="toggler-icon middle-bar"></span>
@@ -13,32 +26,16 @@ const NavBar = () => {
         </button>
         <CartWidget />
 
-        <div className="collapse navbar-collapse" id="navbarNav">
+        <div ref={navBarRef} className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav">
             <li className="nav-item">
-              <button id="all" className="nav-link active">Todos los Productos</button>
+              <NavLink to={'/'} onClick={hideNavBar} className="nav-link">Todos los Producto</NavLink>
             </li>
-            <li className="nav-item">
-              <button id="piano" className="nav-link">Pianos</button>
-            </li>
-            <li className="nav-item">
-              <button id="guitar" className="nav-link">Guitarras</button>
-            </li>
-            <li className="nav-item">
-              <button id="bass" className="nav-link">Bajos</button>
-            </li>
-            <li className="nav-item">
-              <button id="drums" className="nav-link">Baterías</button>
-            </li>
-            <li className="nav-item">
-              <button id="microphone" className="nav-link">Micrófonos</button>
-            </li>
-            <li className="nav-item">
-              <button id="saxophone" className="nav-link">Saxofónes</button>
-            </li>
-            <li className="nav-item">
-              <button id="soundboard" className="nav-link">Consolas</button>
-            </li>
+            {linkProds.map((prod, i) => {
+              return <li className="nav-item" key={i}>
+                <NavLink to={`/category/${prod}`} onClick={hideNavBar} className="nav-link">{prod}</NavLink>
+              </li>
+            })}
           </ul>
         </div>
       </div>

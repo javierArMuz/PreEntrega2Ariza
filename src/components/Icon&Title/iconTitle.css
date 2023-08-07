@@ -1,0 +1,13 @@
+.titleStrip {
+  background: radial-gradient(var(--bgTitleStripDark), var(--bgTitleStripLight));
+}
+
+.icono {
+  width: 2rem;
+}
+
+@media (width < 497px) {
+  .titleStrip h1 {
+    font-size: larger;
+  }
+}

@@ -1,23 +1,14 @@
 :root {
-  --bgTitleStripDark: rgb(245, 180, 40);
-  --bgTitleStripLight: rgba(248, 218, 45, 0.918);
+  --bgTitleStripDark: #f5b428;
+  --bgTitleStripLight: #f8da2dea;
+  --bgAppYellow: #ddb944;
+  --bgAppViolet: #916d96;
+  --bgButtonViolet: #8e0ada;
+  --bgButtonHover: #9423d4;
 }
 
 .App {
   min-width: 300px;
-}
-
-/* ======= icon&Title ======= */
-.titleStrip {
-  background: radial-gradient(var(--bgTitleStripDark), var(--bgTitleStripLight));
-}
-
-.icono {
-  width: 2rem;
-}
-
-@media (width < 497px) {
-  .titleStrip h1 {
-    font-size: larger;
-  }
+  min-height: 100vh;
+  background: linear-gradient(to right, var(--bgButtonViolet), var(--bgAppYellow));
 }

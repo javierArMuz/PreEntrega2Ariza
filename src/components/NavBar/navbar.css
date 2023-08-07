@@ -63,3 +63,38 @@
   top: inherit;
   transform: rotate(-135deg);
 }
+
+/* Linea de subrayado */
+.nav-item {
+  position: relative;
+}
+
+.nav-item a::after {
+  content: " ";
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 97%;
+  height: 3px;
+  background: var(--bgTitleStripDark);
+  transform: scaleX(0);
+  transition: transform .3s ease-in-out;
+}
+
+.nav-item a:hover::after,
+.nav-item a.active::after {
+  transform: scaleX(1);
+}
+
+/* MediaQuery */
+@media (width>991px) {
+  .navbar {
+    --bs-navbar-padding-y: 0.1rem;
+  }
+}
+
+@media (width<992px) {
+  .nav-item a::after {
+    width: 20%;
+  }
+}
