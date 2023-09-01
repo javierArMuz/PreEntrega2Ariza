@@ -1,14 +1,46 @@
 :root {
   --bgTitleStripDark: #f5b428;
   --bgTitleStripLight: #f8da2dea;
-  --bgAppYellow: #ddb944;
-  --bgAppViolet: #916d96;
   --bgButtonViolet: #8e0ada;
   --bgButtonHover: #9423d4;
+  --textError: #750303;
+  --colorSuccess: #1ed12d;
+  --colorError: #fd4d4d;
 }
 
 .App {
   min-width: 300px;
   min-height: 100vh;
-  background: linear-gradient(to right, var(--bgButtonViolet), var(--bgAppYellow));
+  background: linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+img {
+  height: 100%;
+}
+
+.cursorPointer {
+  cursor: pointer;
+}
+
+.btn {
+  background: var(--bgButtonViolet);
+}
+
+.btn:hover {
+  background: var(--bgButtonHover);
+}
+
+.btn:disabled {
+  background-color: rgba(128, 128, 128, 0.685);
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }

@@ -68,3 +68,68 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+# Titulo y Descripción del Proyecto
+
+Casa de Instrumentos Musicales.
+Página web para venta de instrumentos musicales con las funcionalidades de un e-commerce.
+Nuestro propósito es colocar estos instrumentos al alcance de todas aquellas personas que esten interesadas en adquirirlos
+
+## Los Usuarios 
+Todo Visitante debería poder navegar tu e-commerce y ver los productos.
+
+PRODUCTOS:
+
+...ver la lista completa de productos (catálogo), para ver todo lo disponible para comprar.
+
+...refinar el listado por categorías, para poder ver los items en los que estoy interesado.
+
+...ver los detalles de un producto individual (incluida las fotos, descripciones, etc...), asi puedo determinar si quiero ese producto o no.
+
+...editar cantidades de cada producto, en caso que quiera mas o menos cantidad de un producto en particular.
+
+CARRITO:
+
+...poder agregar items a mi carrito de compras desde el listado o desde a página de detalles de un producto, para poder comprarlos después.
+
+...sacar items de mi carrito, en caso que decida no quererlos.
+
+...refrescar la página, o irme y volver, y todavía tener mi carrito de compras (sin haberme creado una cuenta). (usando localStorage).
+
+CHECKOUT:
+
+...poder comprar todos los items de mi carrito.
+
+...recibir un id de confirmación que hice la compra.
+
+## Instalaciones Adicionales
+
+Para los estilos instalamos bootstrap:
+
+```bash
+  npm i bootstrap@5.3.0
+```
+
+Para los iconos instalamos bootstrap-icons:
+
+```bash
+  npm i bootstrap-icons
+```
+
+Para los cuadros emergentes instalamos sweetalert2:
+
+```bash
+  npm install --save sweetalert2 sweetalert2-react-content
+```
+## Autor
+
+- [@javierArMuz](https://www.github.com/javierArMuz)
+
+## Agradecimientos
+
+ - [A Dios, sobre todo]
+ - [Equipo Coderhouse]
+ - [Profesor: Maximiliano Torreblanca]
+ - [Tutor: Lisandro Cordoba]
+ - [Compañeros en general]

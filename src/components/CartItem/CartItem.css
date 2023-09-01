@@ -1,0 +1,12 @@
+.cartItem .info {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (width>450px) {
+  .cartItem .info {
+    width: 80%;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}

@@ -15,14 +15,14 @@ const ItemCount = ({ initial, stock, onAdd }) => {
   }
 
   return (
-    <div className='counter m-auto w-50'>
-      <div className="controls d-flex justify-content-between">
-        <button className="btn text-white" onClick={decrement}>-</button>
-        <h4 className='number'>{quantity}</h4>
-        <button className="btn text-white" onClick={increment}>+</button>
+    <div className='counter'>
+      <div className="controls d-flex justify-content-center fw-bold">
+        <span className="cursorPointer" onClick={decrement}>-</span>
+        <h4 className='number mx-3'>{quantity}</h4>
+        <span className="cursorPointer" onClick={increment}>+</span>
       </div>
       <div>
-        <button className="btn text-white mt-2" onClick={() => onAdd(quantity)} disabled={!stock} >
+        <button className="btn text-white mt-2 w-100" style={{ width: '10rem' }} onClick={() => onAdd(quantity)} disabled={!stock} >
           Agregar al carrito
         </button>
       </div>

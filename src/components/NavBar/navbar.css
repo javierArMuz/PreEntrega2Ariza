@@ -1,4 +1,10 @@
 /* Barra de munú */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
 .navbar-toggler {
   width: 30px;
   height: 20px;

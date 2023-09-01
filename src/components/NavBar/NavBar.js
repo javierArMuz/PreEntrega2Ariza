@@ -29,13 +29,13 @@ const NavBar = () => {
         <div ref={navBarRef} className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav">
             <li className="nav-item">
-              <NavLink to={'/'} onClick={hideNavBar} className="nav-link">Todos los Producto</NavLink>
+              <NavLink to={'/'} onClick={hideNavBar} className="nav-link">Todos los Productos</NavLink>
             </li>
-            {linkProds.map((prod, i) => {
-              return <li className="nav-item" key={i}>
+            {linkProds.map((prod, i) => (
+              <li className="nav-item" key={i}>
                 <NavLink to={`/category/${prod}`} onClick={hideNavBar} className="nav-link">{prod}</NavLink>
               </li>
-            })}
+            ))}
           </ul>
         </div>
       </div>

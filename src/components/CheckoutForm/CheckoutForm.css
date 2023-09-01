@@ -1,0 +1,49 @@
+.form section {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+
+.form-floating {
+  position: relative;
+}
+
+input.form-control:focus {
+  box-shadow: none;
+}
+
+i {
+  opacity: 0;
+}
+
+i.iconError,
+i.iconSuccess {
+  position: absolute;
+  top: 16px;
+  right: 10px;
+  opacity: 1;
+  z-index: 5;
+}
+
+i.iconError {
+  color: var(--colorError);
+}
+
+i.iconSuccess {
+  color: var(--colorSuccess);
+}
+
+.msgErrorInput {
+  font-size: 12px;
+  color: var(--textError);
+}
+
+@media (min-width: 490px) {
+  .container {
+    max-width: 700px;
+  }
+
+  .form section {
+    grid-template-columns: 1fr 1fr;
+  }
+}
