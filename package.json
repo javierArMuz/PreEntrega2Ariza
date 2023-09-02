@@ -1,4 +1,5 @@
 {
+  "homepage": "https://javierArMuz.github.io/proyectoFinalReactAriza",
   "name": "ecommerce",
   "version": "0.1.0",
   "private": true,
@@ -11,6 +12,7 @@
     "bootstrap": "^5.3.0",
     "bootstrap-icons": "^1.10.5",
     "firebase": "^10.3.0",
+    "gh-pages": "^6.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.14.2",
@@ -20,10 +22,12 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "start": "react-scripts suild",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts etart",
+    "build": "react-scripts bject"
   },
   "eslintConfig": {
     "extends": [
