@@ -1,29 +1,30 @@
-.cardItemList picture {
-  height: 16rem;
-}
+.cardItemList {
+  & picture {
+    height: 16rem;
+  }
 
-.cardItemList .card-information {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
+  .card-information {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
 }
 
 @media (width > 760px) {
   .cardItemList {
     width: 78vw;
-  }
 
-  .cardItemList .card-body {
-    display: flex;
-  }
+    .card-body {
+      display: flex;
+    }
 
-  .cardItemList picture {
-    height: 26rem;
-  }
+    & picture {
+      height: 26rem;
+    }
 
-  .cardItemList .card-information {
-    width: 50%;
+    .card-information {
+      width: 50%;
+    }
   }
-
 }

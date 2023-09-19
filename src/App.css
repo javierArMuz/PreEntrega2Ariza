@@ -29,14 +29,14 @@ img {
 
 .btn {
   background: var(--bgButtonViolet);
-}
 
-.btn:hover {
-  background: var(--bgButtonHover);
-}
+  &:hover {
+    background-color: var(--bgButtonHover);
+  }
 
-.btn:disabled {
-  background-color: rgba(128, 128, 128, 0.685);
+  &:disabled {
+    background-color: #808080af;
+  }
 }
 
 input[type=number]::-webkit-inner-spin-button,
