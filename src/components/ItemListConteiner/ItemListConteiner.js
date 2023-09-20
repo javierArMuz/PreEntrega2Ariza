@@ -36,11 +36,12 @@ const ItemListConteiner = ({ greeting }) => {
   }
 
   return (
-    <>
-      {greeting ? <h2 className="text-center my-3">{greeting}</h2>
+    <main className="products">
+      {greeting ?
+        <h2 className="text-center my-3">{greeting}</h2>
         : <h2 className="text-center my-3">{categoryId}</h2>}
       <ItemList products={products} />
-    </>
+    </main>
   )
 }
 export default ItemListConteiner;
