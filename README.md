@@ -73,7 +73,9 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 # Titulo y Descripción del Proyecto
 
 Casa de Instrumentos Musicales.
+
 Página web para venta de instrumentos musicales con las funcionalidades de un e-commerce.
+
 Nuestro propósito es colocar estos instrumentos al alcance de todas aquellas personas que esten interesadas en adquirirlos
 
 ## Los Usuarios 
