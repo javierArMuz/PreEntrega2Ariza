@@ -125,6 +125,7 @@ Para los cuadros emergentes instalamos sweetalert2:
 ## Autor
 
 - [@javierArMuz](https://www.github.com/javierArMuz)
+- Este proyecto fue realizado y tutoreado con la supervisión del equipo de Coderhouse para la certifición del curso de react js.
 
 ## Agradecimientos
 
