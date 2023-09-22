@@ -77,7 +77,7 @@ Página web para venta de instrumentos musicales con las funcionalidades de un e
 Nuestro propósito es colocar estos instrumentos al alcance de todas aquellas personas que esten interesadas en adquirirlos
 
 ## Los Usuarios 
-Todo Visitante debería poder navegar tu e-commerce y ver los productos.
+Todo visitante puede navegar este e-commerce y ver los productos.
 
 PRODUCTOS:
 
