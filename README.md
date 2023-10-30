@@ -100,4 +100,4 @@ Para los cuadros emergentes instalamos sweetalert2:
 
 ### Deployment
 
-[https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+[casadeinstrumentosmusicales](https://javierarmuz.github.io/casadeinstrumentosmusicales/)
